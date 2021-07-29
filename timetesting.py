@@ -1,6 +1,6 @@
 import time
-starttime = time.time()
-time.sleep(1)
-newtime = time.time()
-elapsed = newtime - starttime
-print(elapsed)
+
+if spawntime == False:
+	spawnseed = randint(240, 480)
+	spawnstarttime = time.time()
+	spawntime = True

@@ -155,7 +155,7 @@ def randomhandler():
 	global a
 	global waterbreak
 	global spawnseed
-	global setspawn
+
 	global spawntime
 	global atime
 	global watertime
@@ -182,6 +182,7 @@ def randomhandler():
 		waterstarttime = time.time()
 	if time.time() - spawnstarttime >= spawnseed:
 		print("Setting Spawn!")
+		spawnstarttime = time.time()
 		mouse.release(Button.left)
 		for char in "/setspawn":
 			keyboard.press(char)
@@ -189,7 +190,7 @@ def randomhandler():
 			time.sleep(random.random() / 4)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		setspawn = 0
+
 		spawnseed = randint(240,480)
 		print("spawnseed is " + str(spawnseed))
 		mouse.press(Button.left)
@@ -234,8 +235,10 @@ def randomhandler():
 		time.sleep(watertime)
 		startfarming()
 	if time.time() - cooldowntimer >= 1:
-		print("Taking random action in " + str(time.time() - astarttime + a))
+		print("Taking random action in " + str(a - (time.time() - astarttime)))
+
 		print("Taking waterbreak in " + str(time.time() - watertime + waterbreak))
+
 		print("Setting Spawn in " + str(time.time() - spawntime + spawnseed))
 		cooldowntime = False
 
@@ -259,7 +262,7 @@ def randomhandler():
 
 
 def randomactions():
-	global setspawn
+
 	global spawnseed
 	# Uses self made timer
 	while True:

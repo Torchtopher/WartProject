@@ -235,11 +235,12 @@ def randomhandler():
 		time.sleep(watertime)
 		startfarming()
 	if time.time() - cooldowntimer >= 1:
-		print("Taking random action in " + str(a - (time.time() - astarttime)))
-
-		print("Taking waterbreak in " + str(time.time() - watertime + waterbreak))
-
-		print("Setting Spawn in " + str(time.time() - spawntime + spawnseed))
+		spawntimeleft = int(spawnseed - (time.time() - spawnstarttime))
+		watertimeleft = int(spawnseed - (time.time() - waterstarttime))
+		atimeleft = int(spawnseed - (time.time() - astarttime))
+		print(str(watertimeleft) + " seconds left until waterbreak")
+		print(str(spawntimeleft) + " seconds left until setting spawn")
+		print(str(atimeleft) + " seconds left until a random action")
 		cooldowntime = False
 
 

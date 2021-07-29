@@ -26,7 +26,11 @@ except:
 
 	win32gui.MoveWindow(hwnd, 1255, 500, 1315, 480, True)
 
-os.chdir(r"C:\Users\choll\AppData\Local\Programs\Python\Python39\WartProject\Wartlog")
+dir = r'C:\Users\choll\AppData\Local\Programs\Python\Python39\Wartlog'
+for file in os.scandir(dir):
+    os.remove(file.path)
+print("Cleared wartlog directory!")
+os.chdir(r"C:\Users\choll\AppData\Local\Programs\Python\Python39\Wartlog")
 cwd = os.getcwd()
 print("Moved into", cwd)
 

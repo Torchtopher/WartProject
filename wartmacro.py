@@ -183,6 +183,8 @@ def randomhandler():
 	if time.time() - spawnstarttime >= spawnseed:
 		print("Setting Spawn!")
 		spawnstarttime = time.time()
+		keyboard.release("a")
+		keyboard.release("d")
 		mouse.release(Button.left)
 		for char in "/setspawn":
 			keyboard.press(char)
@@ -193,7 +195,7 @@ def randomhandler():
 
 		spawnseed = randint(240,480)
 		print("spawnseed is " + str(spawnseed))
-		mouse.press(Button.left)
+		startfarming()
 
 
 

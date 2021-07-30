@@ -142,10 +142,12 @@ def startfarming():
 	global apress
 	global dpress
 	if apress == True:
+		time.sleep(.2)
 		mouse.press(Button.left)
 		keyboard.press("a")
 
 	if dpress == True:
+		time.sleep(.2)
 		mouse.press(Button.left)
 		keyboard.press("d")
 

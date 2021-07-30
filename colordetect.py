@@ -234,6 +234,7 @@ while(1):
 			print("Jumpcooldown is " + str(jumpcooldown))
 	# Program Termination
 	cv2.imshow("Multiple Color Detection in Real-TIme", imageFrame)
+	time.sleep(.5)
 	if cv2.waitKey(10) & 0xFF == ord('q'):
 		cap.release()
 		cv2.destroyAllWindows()

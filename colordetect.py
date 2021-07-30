@@ -40,8 +40,7 @@ except:
 	h = y1 - y0 # height
 
 	win32gui.MoveWindow(hwnd, 1255, 960, 1315, 490, True)
-#Moves mouse to the "Back to game" button and clicks it
-time.sleep(5)
+time.sleep(7)
 
 
 # Start a while loop

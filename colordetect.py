@@ -129,7 +129,7 @@ while(1):
 									(255, 0, 0), 2)
 			blue = blue + 1
 			# tracks blue objects and if seen writes to a file that wartmacro looks at
-			if blue > 0:
+			if blue >= 3:
 				f = open("wartconf.txt", "r+")
 				filedata = f.read()
 				# Makes sure nothing else is written

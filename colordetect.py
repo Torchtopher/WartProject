@@ -41,12 +41,12 @@ except:
 
 	win32gui.MoveWindow(hwnd, 1255, 960, 1315, 490, True)
 #Moves mouse to the "Back to game" button and clicks it
-time.sleep(7)
+time.sleep(5)
 
 
 # Start a while loop
 #'top': 30, 'left': 0, 'width': 1280, 'height': 1400
-time.sleep(1)
+
 jumpcooldown = 0
 while(1):
 	red = 0

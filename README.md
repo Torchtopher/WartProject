@@ -10,7 +10,11 @@ Decent logging, no log file yet but the terminal output gives a good idea whats 
 
 Installing:
 
-Don't, there are probably 3 people who would actually benift from this. The repo is just for version control and sharing with friends. 
+Don't, there are probably 3 people who would actually benift from this. The repo is just for version control and sharing with friends.
+
+Why its better than most other autofarmers.
+
+Its written in python so unlike most autofarmers which are in java and actually get the position of blocks/the player every tick this just uses the screen so it makes it (hopefully) very very hard to detect, and certainly harder to detect than the java mods. It also has features that has it take breaks from farming to simulate humans having to go to the bathroom/do something beside farm.
 
 TODO:
 

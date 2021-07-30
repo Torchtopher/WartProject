@@ -60,6 +60,8 @@ while(1):
 
 	# Then reads it and does the color detection
 	imageFrame = cv2.imread("pyautoguiss.png")
+	hsvFrame = cv2.cvtColor(imageFrame, cv2.COLOR_BGR2HSV)
+
 
 
 	# THIS PART WAS COPIED IDK WHAT GOES ON BUT I MADE IT WORK
@@ -80,6 +82,8 @@ while(1):
 
 	# Change image to red where we found brown
 	imageFrame[mask>0]=(0,0,0)
+	# Mask image to only select browns
+
 
 	#BGR NOT RGB
 	# Set range for red color and

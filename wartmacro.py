@@ -33,7 +33,7 @@ corddetectpath = r"C:\Users\choll\AppData\Local\Programs\Python\Python39\WartPro
 
 os.startfile(wartloggerpath)
 
-time.sleep(.5)
+time.sleep(1)
 os.startfile(colordetctpath)
 
 time.sleep(2)

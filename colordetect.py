@@ -40,7 +40,7 @@ except:
 	h = y1 - y0 # height
 
 	win32gui.MoveWindow(hwnd, 1255, 960, 1315, 490, True)
-time.sleep(7)
+time.sleep(4)
 
 
 # Start a while loop
@@ -60,7 +60,6 @@ while(1):
 
 	# Then reads it and does the color detection
 	imageFrame = cv2.imread("pyautoguiss.png")
-	imageFrame[np.where((imageFrame==[190, 214, 255]).all(axis=2))] = [0,0,0]
 
 
 	# THIS PART WAS COPIED IDK WHAT GOES ON BUT I MADE IT WORK
@@ -74,6 +73,19 @@ while(1):
 	# HSV(hue-saturation-value)
 	# color space
 	hsvFrame = cv2.cvtColor(imageFrame, cv2.COLOR_BGR2HSV)
+	# Define lower and uppper limits of what we call "brown"
+	lightblue_lo=np.array([100, 20, 20])
+	lightblue_hi=np.array([110, 255, 255])
+	# Mask image to only select browns
+	mask=cv2.inRange(hsvFrame,lightblue_lo,lightblue_hi)
+
+	# Change image to red where we found brown
+	hsvFrame[mask>0]=(0,0,0)
+	mask=cv2.inRange(imageFrame,lightblue_lo,lightblue_hi)
+
+	# Change image to red where we found brown
+	imageFrame[mask>0]=(0,0,0)
+
 	#BGR NOT RGB
 	# Set range for red color and
 	# define mask

@@ -14,21 +14,29 @@ cooldown = 0
 pythonpath = r"C:\Users\choll\AppData\Local\Programs\Python\Python39\python.exe"
 try:
     hwnd = win32gui.FindWindow(None, pythonpath)
-    
+
     x0, y0, x1, y1 = win32gui.GetWindowRect(hwnd)
     w = x1 - x0 # width
     h = y1 - y0 # height
-    
+
     win32gui.MoveWindow(hwnd, 1255, 480, 1315, 495, True)
-    #BGR NOT RGB 
+    #BGR NOT RGB
 except:
     hwnd = win32gui.FindWindow(None, "Command Prompt - corddetect.py")
-    
+
     x0, y0, x1, y1 = win32gui.GetWindowRect(hwnd)
     w = x1 - x0 # width
     h = y1 - y0 # height
-    
+
     win32gui.MoveWindow(hwnd, 1255, 500, 1315, 480, True)
+
+hwnd = win32gui.FindWindow(None, "Task Manager")
+
+x0, y0, x1, y1 = win32gui.GetWindowRect(hwnd)
+w = x1 - x0 # width
+h = y1 - y0 # height
+
+win32gui.MoveWindow(hwnd, 1255, 480, 1315, 495, True)
 
 mouse = MController()
 
@@ -89,15 +97,14 @@ while True:
     cv2.imshow("Cord Detection", image)
 
     hwnd = win32gui.FindWindow(None, "Cord Detection")
-    
+
     x0, y0, x1, y1 = win32gui.GetWindowRect(hwnd)
     w = x1 - x0 # width
     h = y1 - y0 # height
-    
+
     win32gui.MoveWindow(hwnd, 2000, 800, w, h, True)
 
     if cv2.waitKey(10) & 0xFF == ord('q'):
         cap.release()
         cv2.destroyAllWindows()
         break
- 

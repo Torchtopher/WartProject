@@ -21,6 +21,7 @@ TODO:
 Add website with login, make it look really nice. Make it connected with the bot so you can semi control it from the website.
 Use the OCR on your invetory to see how much you have farmed.
 Add more random actions (Mouse actions)
+Add command line args and make it more customizable.
 Make code async/write it better.
 Add the feature to make sure its farming, and if its not take action.
 Make discord bot connected with all this, to notify me when it goes offline/gets disconnected

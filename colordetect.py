@@ -159,38 +159,21 @@ while(1):
 
 				keyboard = Controller()
 				print("Jumping!!")
-
-
-
 				keyboard.press(Key.space)
-
 				time.sleep(0.1)
-
 				keyboard.release(Key.space)
-
 				time.sleep(0.05)
-
 				keyboard.press(Key.space)
-
 				time.sleep(0.1)
-
 				time.sleep(0.1)
-
 				keyboard.release(Key.space)
 				time.sleep(random.random() * 3 + .2)
 				keyboard.press(Key.space)
-
 				time.sleep(0.1)
-
 				keyboard.release(Key.space)
-
 				time.sleep(0.1)
-
 				keyboard.press(Key.space)
-
 				time.sleep(0.1)
-
-
 				keyboard.release(Key.space)
 				jump = True
 				jumpcooldown = 5

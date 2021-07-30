@@ -73,8 +73,8 @@ while(1):
 	# HSV(hue-saturation-value)
 	# color space
 	# Define lower and uppper limits of what we call "brown"
-	lightblue_lo=np.array([100, 0, 0])
-	lightblue_hi=np.array([180, 255, 255])
+	lightblue_lo=np.array([100, 50, 50])
+	lightblue_hi=np.array([110, 255, 255])
 	# Mask image to only select browns
 	mask=cv2.inRange(hsvFrame,lightblue_lo,lightblue_hi)
 

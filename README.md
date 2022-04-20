@@ -1,4 +1,4 @@
-This project was made beacuase I wanted more resources in Minecraft. It is made in python. It is still being worked on and plenty of new features are on the way. This program was made for windows and for a 2560x1440 monitor with a decent computer. Withen minecraft you must also have a certain type of farm and be using a certain texture pack. It will most likely not work for you but thats ok.
+TThis program was made for windows and for a 2560x1440 monitor with a decent computer. Withen minecraft you must also have a certain type of farm and be using a certain texture pack. It will most likely not work for you.
 
 Features:
 
@@ -27,4 +27,4 @@ Add the feature to make sure its farming, and if its not take action.
 Make discord bot connected with all this, to notify me when it goes offline/gets disconnected
 Make some cool graphs of how much the bot farmed.
 Learn JavaScript for the website.
-Profit.
+

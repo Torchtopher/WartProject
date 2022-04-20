@@ -10,7 +10,7 @@ Decent logging, no log file yet but the terminal output gives a good idea whats 
 
 Installing:
 
-Don't, there are probably 3 people who would actually benift from this. The repo is just for version control and sharing with friends.
+Don't
 
 Why its better than most other autofarmers.
 

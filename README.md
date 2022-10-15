@@ -1,4 +1,4 @@
-TThis program was made for windows and for a 2560x1440 monitor with a decent computer. Withen minecraft you must also have a certain type of farm and be using a certain texture pack. It will most likely not work for you.
+This program was made for windows and for a 2560x1440 monitor with a decent computer. Withen minecraft you must also have a certain type of farm and be using a certain texture pack. It will most likely not work for you.
 
 Features:
 
